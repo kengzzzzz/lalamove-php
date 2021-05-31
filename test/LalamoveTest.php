@@ -61,7 +61,7 @@ class LalamoveTest extends TestCase
 
   public function testAuthFail()
   {
-    $request = new \Lalamove\Api\LalamoveApi(getenv('host'), 'abc123', 'abc123', getenv('country'));
+    $request = new \Lalamove\Api\LalamoveApi(getenv('host'), 'abc123', 'abc123', getenv('TH_BKK'));
     $result = $request->quotation($this->body);
 
     $content = (string)$result->getBody();
